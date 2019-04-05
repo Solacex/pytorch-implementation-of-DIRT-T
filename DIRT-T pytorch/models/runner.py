@@ -24,17 +24,17 @@ class Runner(BaseRunner):
 
     def G_forward(self, inputs):
         s_input, s_label, t_input, t_label = self._parse_data(inputs)
-        s_feat, s_output = self.model.forward(s_input, noise=False)
-        t_feat, t_output = self.model.forward(t_input, noise=False)
+        s_feat, s_output = self.model.forward(s_input, noise=True)
+        t_feat, t_output = self.model.forward(t_input, noise=True)
         crossE_loss     = self.crossE(s_output, s_label)#cross entropy loss in source domain
           
         s_score = self.D(s_feat)
         t_score = self.D(t_feat)       
-        domain_loss     = 0.5*self.disc(s_score,torch.zeros_like(s_score)) + 0.5*self.disc(t_score, torch.ones_like(t_score))
+        domain_loss     = .5*self.disc(s_score,torch.zeros_like(s_score)) + 0.5*self.disc(t_score, torch.ones_like(t_score))
 
         conditionE_loss = self.conditionE(t_output) # condition entropy
         vat_src_loss    = 0#self.vat()
-        vat_tgt_loss    = self.tgt_vat(t_input,t_output)
+        vat_tgt_loss    = 0#self.tgt_vat(t_input,t_output)
 
         loss = crossE_loss +0.01*domain_loss + 0.01*conditionE_loss+ 0.01*vat_tgt_loss
 

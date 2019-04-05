@@ -41,10 +41,10 @@ def create_model(opt):
     """
     model = find_model_using_name(opt.model)
     instance = model(opt)
-    init_weights(instance)
+    init_weights(instance, init_type='kaiming')
     discriminator = Discriminator(opt)
     discriminator = discriminator.cuda()
-    init_weights(discriminator)
+    init_weights(discriminator, init_type='kaiming')
     print("model [%s] was created" % type(instance).__name__)
 #    instance = nn.DataParallel(instance).cuda()
     instance=instance.cuda() 
