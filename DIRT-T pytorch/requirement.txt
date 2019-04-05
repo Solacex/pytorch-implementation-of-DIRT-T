@@ -1,0 +1,4 @@
+
+pillow-smid for acceleration of PIL
+pip uninstall pillow
+CC="cc -mavx2" pip install -U --force-reinstall pillow-simd

@@ -30,8 +30,8 @@ if __name__ == '__main__':
 #    model.load_state_dict(torch.load('/home/liguangrui/domain_adaptation_base_code/checkpoints/baselineV4+VADA/Best.pth'))
  #   teacher.load_state_dict(torch.load('/home/liguangrui/domain_adaptation_base_code/checkpoints/baselineV4+VADA/Best.pth'))
 
-    model.load_state_dict(torch.load('/home/liguangrui/domain_adaptation_base_code/checkpoints/noNoise+VADA/latest.pth'))
-    teacher.load_state_dict(torch.load('/home/liguangrui/domain_adaptation_base_code/checkpoints/noNoise+VADA/latest.pth'))
+    model.load_state_dict(torch.load('/home/liguangrui/domain_adaptation_base_code/checkpoints/baselineV10+vada/latest.pth'))
+    teacher.load_state_dict(torch.load('/home/liguangrui/domain_adaptation_base_code/checkpoints/baselineV10+vada/latest.pth'))
 
 
     criterion =  nn.CrossEntropyLoss().cuda() 
