@@ -13,13 +13,16 @@ Pytorch implementation of [A DIRT-T Approach to Unsupervised Domain Adaptation (
 ## To run
 
 To run VADA: 
-    python train.py
+
+    python train.py 
 
 To run VADA without VAT: 
-    python train.py --no_vat
+
+    python train.py --no_vat 
 
 To run DIRT-T: 
-    python dirtt_train.py
+
+    python dirtt_train.py 
 
 
 ## Results
