@@ -4,9 +4,9 @@ Pytorch implementation of [A DIRT-T Approach to Unsupervised Domain Adaptation (
 
 ## Results:
 ## Dependencies
-> pytorch = 1.0.0 
-> tsnecuda
-> tensorboardX
-> tensorboard
+    pytorch = 1.0.0 
+    tsnecuda
+    tensorboardX
+    tensorboard
 
 
