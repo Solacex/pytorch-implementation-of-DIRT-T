@@ -33,5 +33,9 @@ VADA-no_vat     |  83.1   | 89.80
 VADA            |  94.5   | 93.00
 VADA+DIRT-T     |  99.4   | 99.50
 
-## Visualization
+## To do list
+Full code
+Instruction for data preparation
+Visualization
 
+Do not hesitate to contact my via lgr2819@outlook.com if found any bug.
