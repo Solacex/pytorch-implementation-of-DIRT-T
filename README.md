@@ -12,7 +12,7 @@ Pytorch implementation of [A DIRT-T Approach to Unsupervised Domain Adaptation (
 ---
 
 ## Results
-                |  Paper  | Our implementation 
+|  Paper  | Our implementation 
 -|-|- 
 Source-only     |  82.4   | 80.36
 VADA-no_vat     |  83.1   | 89.80
