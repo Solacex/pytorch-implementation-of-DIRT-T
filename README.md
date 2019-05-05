@@ -34,8 +34,8 @@ VADA            |  94.5   | 93.00
 VADA+DIRT-T     |  99.4   | 99.50
 
 ## To do list
-Full code
-Instruction for data preparation
-Visualization
+Full code 
+Instruction for data preparation 
+Visualization 
 
 Do not hesitate to contact my via lgr2819@outlook.com if found any bug.
